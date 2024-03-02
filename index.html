@@ -5,16 +5,545 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Global Web Technologies</title>
     <link rel="stylesheet" href="./index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+   
 </head>
-<body>
-    <header>
-        <div id="icon"></div>
-        <div id="logo"></div>
-        <div id="navsection"></div>
+<body class="relative">
+    <header class="w-full sticky top-0 z-[100] bg-white"  >
+        <div class="w-full flex items-center  justify-around  p-2 h-[80px]  overflow-x-hidden">
+
+        
+
+        <div  class="hidden lg:block">
+            <img  class="h-6" src="./Images/NoPath - Copy (8).png" alt="nav icon">
+        </div>
+        <div class="lg:ml-12">
+            <img class="h-16" src="./Images/Group 1.png" alt="logo">
+        </div>
+        <div class="hidden lg:flex  items-center justify-center gap-6">
+            <img class="h-6" src="./Images/NoPath - Copy.png" alt="magifying glass">
+            <img  class="h-6" src="./Images/Icon feather-heart.png" alt="heart icon">
+            <img class="h-6" src="./Images/NoPath - Copy (11).png" alt="profile logo">
+            <img class="h-6" src="./Images/NoPath - Copy (10).png" alt="shopping bag icon">
+        </div>
+
+<!-- Burger menu for small screen -->
+        <div class="lg:hidden">
+            <!-- Burger menu icon -->
+            <button class="h-8 w-8  bg-cyan-700 rounded flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 m-auto text-white">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>
+                  
+            </button>
+        </div>
+       </div>
+       
+        <!-- options -->
+        <div class="w-full flex items-center justify-center gap-14 overflow-x-auto py-2  px-6 bg-whtie ">
+            <p class="text-sm">Home</p>
+            <p class="text-sm">Face</p>
+            <p class="text-sm">Hair</p>
+            <p class="text-sm">Body</p>
+            <p class="text-sm">Secret's</p>
+            <p class="text-sm">Mini's</p>
+            <p class="text-sm">Gifting</p>
+            <p class="text-sm">Offers</p>
+            <p class="text-sm">Testimonials</p>
+            <p class="text-sm">Club</p>
+            <p class="text-sm">About Us</p>
+
+        </div>
+
+        <hr>
+
+        
 
     </header>
-    <main></main>
-    <footer></footer>    
+    <main class="overflow-y-auto">
+        <!-- Slider -->
+        <div class="Slider">
+
+            <div class="oldswiper myOldSwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./Images/Banner Slide1.png" alt="slide 1">
+                </div>
+                  <div class="swiper-slide">
+                    <img src="./Images/Banner Slide2.png" alt="slide 2">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./Images/Banner Slide3.png" alt="slide 3">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./Images/Banner Slide4.png" alt="slide 4">
+                  </div>
+                </div>
+                <div class="swiper-button-next" style="width: 100vw; height:600px;  top:0"></div>
+                
+                <div class="swiper-pagination"></div>
+              </div>
+
+        </div>
+
+<!-- vertical slider with some text -->
+        <div class=" lg:flex  justify-center items-center lg:px-32   gap-2 bg-white relative">
+            <!-- text -->
+            <div class="w-full lg:mb-0 mb-6   pl-16 z-50 bg-white" >
+                <h2 class="text-center mb-4 font text-3xl font-bold" style="font-family: Amatic SC;">We SEEK THE ANCIENT, WE SEEK THE TIMELESS<br>WE SEEK THE CLEAN WAY </h2>
+                <p class="text-center text-gray-800 text-sm" style="font-family: PlayFair Display;">Inspired from the ancient our products have a rare potency to enhance beauty because we do custom formulation, curate ingredients, test, manufacture, design packaging all at our very own licensed organic factory.</p>
+
+            </div>
+            <!-- horizontal slider -->
+            <div  class="w-full lg:w-1/2 lg:mb-0 mb-6  pr-16  bg-white">
+            <div class="Newswiper myNewSwiper border-1 border-[red]">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img class="rounded-md" src="./Images/Banner Slide1.png" alt="slide 1">
+                </div>
+                <div class="swiper-slide">
+                    <img  class="rounded-md " src="./Images/Banner Slide2.png" alt="slide 1">
+                </div>
+                <div class="swiper-slide">
+                    <img  class="rounded-md" src="./Images/Banner Slide3.png" alt="slide 1">
+                </div>
+                <div class="swiper-slide">
+                    <img  class="rounded-md" src="./Images/Banner Slide4.png" alt="slide 1">
+                </div>
+                <div class="swiper-slide">
+                    <img  class="rounded-md" src="./Images/Banner Slide4.png" alt="slide 1">
+                </div>
+            </div>
+            <div class="swiper-button-next border-2 border-[green] z-[50]" style="position: absolute; height: 250px ; width: 500px; left: 400px; top:20px; opacity: 0; " >
+            </div>
+            
+           
+            </div>
+            </div>
+         
+          
+          
+        </div>
+        <hr class="w-full mx-auto mt-2"> 
+        
+      <!-- tab section   -->
+
+
+      
+
+<div class="mb-4 flex item-center justify-center mt-4 lg:px-32">
+    <ul class=" w-full flex -mb-px text-sm   gap-24  font-medium text-center" id="default-styled-tab" data-tabs-toggle="#default-styled-tab-content" data-tabs-active-classes="text-white hover:text-white bg-[brown] dark:text-white dark:hover:text-white border-black dark:border-black" data-tabs-inactive-classes="dark:border-black text-gray-500 hover:text-gray-500 dark:text-gray-500 border-black hover:border-black dark:border-gray-700 dark:hover:text-gray-300" role="tablist">
+        <li class="me-2 w-full" role="presentation">
+            <button class="inline-block  py-4 px-10 border rounded-full" id="profile-styled-tab" data-tabs-target="#styled-profile" type="button" role="tab" aria-controls="profile" aria-selected="false">
+            <img src="" alt="">
+            <p>Face</p>
+
+            </button>
+        </li>
+        <li class="me-2 w-full" role="presentation">
+            <button class=" inline-block  py-4 px-10 border rounded-full" id="dashboard-styled-tab" data-tabs-target="#styled-dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Dashboard
+
+            </button>
+        </li>
+        <li class="me-2 w-full" role="presentation">
+            <button class="inline-block inline-block py-4 px-10 border rounded-full"  id="settings-styled-tab" data-tabs-target="#styled-settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Settings
+
+            </button>
+        </li>
+    </ul>
+</div>
+
+
+<div id="default-styled-tab-content">
+    <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-profile" role="tabpanel" aria-labelledby="profile-tab">
+        <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Profile tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+    </div>
+    <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+        <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Dashboard tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+    </div>
+    <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-settings" role="tabpanel" aria-labelledby="settings-tab">
+        <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Settings tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+    </div>
+    
+</div>
+
+        <hr class="w-10/12 mx-auto mt-2"> 
+
+        <!-- our best seller -->
+        <div>
+            <div class="text-gray-600 body-font">
+                <div class="lg:px-36 py-1 mx-auto">
+                    <div class="px-5 py-1 mx-auto">
+                        <div class="flex flex-col text-center w-full">
+                          <h1 class="sm:text-4xl text-3xl font-medium  " style="font-family: Amatic SC;">Best Sellers</h1> 
+                        </div>
+    
+                  <div class="flex flex-wrap lg:px-10">
+                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                      <div class="block relative h-64 rounded overflow-hidden">
+                        <img alt="ecommerce" class="object-contain object-center w-full h-full" src="./Best Seller Products/Kumkumadi 35ml Paint.png">
+                      </div>
+                      <div class=" text-center">
+                        <h3 class="text-gray-500 text-xs   mb-1">Mahodaya Kannauj Rose Organic
+                         Lip Butter - Pink</h3>
+                        <div class="flex items-center justify-center gap-8"><img src="./Best Seller Products/ratings.png" alt="ratings"></div>
+                        <p class="mt-1">₹650.00</p>
+                      </div>
+                    </div>
+                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                        <a class="block relative h-64 rounded overflow-hidden">
+                          <img alt="ecommerce" class="object-contain object-center w-full h-full" src="./Best Seller Products/Kushuma 35ml Paint.png">
+                        </a>
+                        <div class=" text-center">
+                            <h3 class="text-gray-500 text-xs   mb-1">Mahodaya Kannauj Rose Organic
+                             Lip Butter - Pink</h3>
+                            <div class="flex items-center justify-center gap-8"><img src="./Best Seller Products/ratings.png" alt="ratings"></div>
+                            <p class="mt-1">₹650.00</p>
+                          </div>
+                    </div>
+                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                        <a class="block relative h-64 rounded overflow-hidden">
+                          <img alt="ecommerce" class="object-contain object-center w-full h-full" src="./Best Seller Products/Mahodaya Rose Paint.png">
+                        </a>
+                        <div class=" text-center">
+                            <h3 class="text-gray-500 text-xs   mb-1">Mahodaya Kannauj Rose Organic
+                             Lip Butter - Pink</h3>
+                            <div class="flex items-center justify-center gap-8"><img src="./Best Seller Products/ratings.png" alt="ratings"></div>
+                            <p class="mt-1">₹650.00</p>
+                          </div>
+                      </div>
+                      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                          <a class="block relative h-64 rounded overflow-hidden">
+                            <img alt="ecommerce" class="object-contain object-center w-full h-full" src="./Best Seller Products/Morrocan Argan Paint.png">
+                          </a>
+                          <div class=" text-center">
+                            <h3 class="text-gray-500 text-xs   mb-1">Mahodaya Kannauj Rose Organic
+                             Lip Butter - Pink</h3>
+                            <div class="flex items-center justify-center gap-8"><img src="./Best Seller Products/ratings.png" alt="ratings"></div>
+                            <p class="mt-1">₹650.00</p>
+                          </div>
+                      </div>
+                      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                        <a class="block relative h-64 rounded overflow-hidden">
+                          <img alt="ecommerce" class="object-contain object-center w-full h-full" src="./Best Seller Products/Kumkumadi 35ml Paint.png">
+                        </a>
+                        <div class=" text-center">
+                            <h3 class="text-gray-500 text-xs   mb-1">Mahodaya Kannauj Rose Organic
+                             Lip Butter - Pink</h3>
+                            <div class="flex items-center justify-center gap-8"><img src="./Best Seller Products/ratings.png" alt="ratings"></div>
+                            <p class="mt-1">₹650.00</p>
+                          </div>
+                      </div>
+                      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                          <a class="block relative h-64 rounded overflow-hidden">
+                            <img alt="ecommerce" class="object-contain object-center w-full h-full" src="./Best Seller Products/Kushuma 35ml Paint.png">
+                          </a>
+                          <div class=" text-center">
+                            <h3 class="text-gray-500 text-xs   mb-1">Mahodaya Kannauj Rose Organic
+                             Lip Butter - Pink</h3>
+                            <div class="flex items-center justify-center gap-8"><img src="./Best Seller Products/ratings.png" alt="ratings"></div>
+                            <p class="mt-1">₹650.00</p>
+                          </div>
+                      </div>
+                      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                          <a class="block relative h-64 rounded overflow-hidden">
+                            <img alt="ecommerce" class="object-contain object-center w-full h-full" src="./Best Seller Products/Mahodaya Rose Paint.png">
+                          </a>
+                          <div class=" text-center">
+                            <h3 class="text-gray-500 text-xs   mb-1">Mahodaya Kannauj Rose Organic
+                             Lip Butter - Pink</h3>
+                            <div class="flex items-center justify-center gap-8"><img src="./Best Seller Products/ratings.png" alt="ratings"></div>
+                            <p class="mt-1">₹650.00</p>
+                          </div>
+                        </div>
+                        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                            <a class="block relative h-64 rounded overflow-hidden">
+                              <img alt="ecommerce" class="object-contain object-center w-full h-full" src="./Best Seller Products/Morrocan Argan Paint.png">
+                            </a>
+                            <div class=" text-center">
+                                <h3 class="text-gray-500 text-xs   mb-1">Mahodaya Kannauj Rose Organic
+                                 Lip Butter - Pink</h3>
+                                <div class="flex items-center justify-center gap-8"><img src="./Best Seller Products/ratings.png" alt="ratings"></div>
+                                <p class="mt-1">₹650.00</p>
+                              </div>
+                        </div>
+                  </div>
+                </div>
+                </div> 
+            </div> 
+            <div class="flex justify-center items-center"
+            ><button class="text-gray-400  text-xs border border-gray-600 px-6 py-2 rounded-2xl mb-2 shadow-inner shadow-md">View All</button>
+            </div>
+        </div>
+        <hr class="w-10/12 mx-auto mt-2">   
+       
+
+
+
+  <!-- customer Testimonials -->
+        <div>
+
+            <section class="text-gray-600 body-font overflow-hidden">
+                <div class="px-5 py-1 mx-auto">
+                  <div class="flex flex-col text-center w-full">
+                    <h1 class="sm:text-4xl text-3xl font-medium  mb-2" style="font-family: Amatic SC;">Customer Testimonials</h1> 
+                  </div>
+                  <div class="flex flex-wrap  lg:px-32">
+                    <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+                      <div class="h-full p-6  bg-[#392933] flex flex-col relative overflow-hidden">
+
+
+                      </div>
+                    </div>
+                    <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+                        <div class="h-full p-6  bg-[#392933] flex flex-col relative overflow-hidden">
+  
+                        </div>
+                      </div>
+                      <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+                        <div class="h-full p-6  bg-[#392933] flex flex-col relative overflow-hidden">
+  
+                        </div>
+                      </div>
+                      <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+                        <div class="h-full p-6  bg-[#392933] flex flex-col relative overflow-hidden">
+  
+                        </div>
+                      </div>
+
+                      <div class="Thirdswiper myThirdSwiper">
+                        <div class="swiper-wrapper">
+                          <div class="Third-swiper-slide ">
+                            <div class="flex items-center justify-center gap-8">
+                            <img class="h-24 w-16" src="./Best Seller Products/Kumkumadi 35ml Paint.png" alt="">
+                            <img class="h-24 w-16" src="./Best Seller Products/Kumkumadi 35ml Paint.png" alt="">
+                            <img class="h-24 w-16" src="./Best Seller Products/Kumkumadi 35ml Paint.png" alt="">
+                          </div>
+                        </div>
+                          <div class="Third-swiper-slide">
+                            <div class="flex items-center justify-center gap-8">
+                                <img  class="h-24 w-16"src="./Best Seller Products/Mahodaya Rose Paint.png" alt="">
+                                <img class="h-24 w-16" src="./Best Seller Products/Mahodaya Rose Paint.png" alt="">
+                                <img  class="h-24 w-16" src="./Best Seller Products/Mahodaya Rose Paint.png" alt="">
+                              </div>
+                          </div>
+                          <div class="Third-swiper-slide">
+                            <div class="flex items-center justify-center gap-8">
+                                <img class="h-24 w-16" src="./Best Seller Products/Morrocan Argan Paint.png" alt="">
+                                <img class="h-24 w-16" src="./Best Seller Products/Morrocan Argan Paint.png" alt="">
+                                <img  class="h-24 w-16" src="./Best Seller Products/Morrocan Argan Paint.png" alt="">
+                              </div>
+                          </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                      </div>
+
+                  </div>
+                </div>
+              </section>
+
+          </div>
+    </main>
+    <footer class="bg-[#392933] w-full ">
+        <div class="container px-16 pb-4 pt-8 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col ">
+          <div class="flex-grow flex flex-wrap  md:text-left text-center ">
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class=" font-medium text-white  text-sm mb-3">Shop</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-white">Face Care</a>
+                </li>
+                <li>
+                  <a class="text-white">Body Care</a>
+                </li>
+                <li>
+                  <a class="text-white">Hair Care</a>
+                </li>
+                <li>
+                  <a class="text-white">Custom</a>
+                </li>
+                <li>
+                    <a class="text-white">Gifting</a>
+                  </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-white text-sm mb-3">About</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-white">Our Story</a>
+                </li>
+                <li>
+                  <a class="text-white">Giving Back</a>
+                </li>
+                <li>
+                  <a class="text-white">Why Timeless</a>
+                </li>
+                <li>
+                  <a class="text-white">Philosophy</a>
+                </li>
+                <li>
+                    <a class="text-white">Certification</a>
+                </li>
+                <li>
+                    <a class="text-white">Careers</a>
+                </li>
+                <li>
+                    <a class="text-white">Policies</a>
+                </li>
+                <li>
+                    <a class="text-white">Blog</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                <h2 class=" font-medium text-white text-sm mb-3">Quick Links</h2>
+                <nav class="list-none mb-10">
+                  <li>
+                    <a class="text-white">My Account</a>
+                  </li>
+                  <li>
+                    <a class="text-white">Custom Product</a>
+                  </li>
+                  <li>
+                    <a class="text-white">Timeless Club</a>
+                  </li>
+                  <li>
+                    <a class="text-white">Customer Stories</a>
+                  </li>
+                  <li>
+                      <a class="text-white">Terms & Conditions</a>
+                    </li>
+                    <li>
+                      <a class="text-white">Refer a Friend</a>
+                    </li>
+                    <li>
+                      <a class="text-white">Contact Us</a>
+                    </li>
+                    <li>
+                      <a class="text-white">FAQs</a>
+                    </li>
+                </nav>
+             </div>
+
+             <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                <h2 class="font-medium text-white text-sm mb-3">Get In Touch</h2>
+                <nav class="list-none mb-10">
+                    <li>
+                        <a class="text-white" href="mailto:contact@example.com">Email: Timelesscare@timelessbeautysecrets.co.in</a>
+                    </li>
+                    <li>
+                        <a class="text-white" href="tel:+1234567890">Phone: +91 9090530011</a>
+                    </li>
+                    <li>
+                        <p class="text-white">Address: Bangalore, India - 560066</p>
+                    </li>
+                   <h2 class="mt-10 mb-8 text-white font-medium text-sm">Follow us On</h2>
+                   <div class="flex items-center justify-start gap-4">
+                    <img class="h-6 w-6" src="./Icons/Icon feather-twitter.png" alt="">
+                    <img class="h-6 w-6" src="./Icons/Icon feather-instagram.png" alt="">
+                    <img class="h-6 w-6" src="./Icons/Icon feather-linkedin.png" alt="">
+                    <img class="h-6 w-6" src="./Icons/Icon feather-facebook.png" alt="">
+                    <img class="h-6 w-6" src="./Icons/Icon feather-youtube.png" alt="">
+                   </div>
+                    
+                </nav>
+            </div>
+            
+           
+          </div>
+        </div>
+
+
+
+        <div class="bg-white  ">
+          <div class="mx-auto py-4 px-5 flex justify-around items-center ">
+            <div>
+                <p class="text-gray-500 text-sm text-center sm:text-left">TIMELESS BEAUTY SECRET © 
+                </p>
+            </div>
+            <div>
+                <span class="flex  mt-2 justify-center items-center gap-6">
+                    <img  class="h-6 w-10"  src="./Icons/Icon awesome-cc-amex.png" alt="">
+                    <img class="h-6 w-10"  src="./Icons/Icon awesome-cc-diners-club.png" alt="">
+                    <img class="h-6 w-10"  src="./Icons/Icon awesome-cc-jcb.png" alt="">
+                    <img class="h-6 w-10"  src="./Icons/Icon metro-cc-paypal.png" alt="">
+                    <img class="h-6 w-10"  src="./Icons/Icon metro-mastercard.png" alt="">
+                    <img  class="h-6 w-10" src="./Icons/Icon metro-visa.png" alt="">
+                    <img  class="h-6 w-10" src="./Icons/Icon payment-discover.png" alt="">
+                    <img  class="h-6 w-10" src="./Icons/Icon payment-maestro-alt.png" alt="">
+                    <img  class="h-6 w-10" src="./Icons/upi-icon.png" alt="">
+                     
+                  </span>
+            </div>
+           
+          </div>
+        </div>
+    </footer>
+      
 </body>
 <script src="./index.js"></script>
+  
+<!-- Swiper JS -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!-- Initialize Swiper -->
+   <script>
+     var swiper = new Swiper(".myOldSwiper", {
+       spaceBetween: 30,
+       effect: "fade",
+       loop: true,
+       navigation: {
+         nextEl: ".swiper-button-next",
+         prevEl: ".swiper-button-prev",
+       },
+       pagination: {
+         el: ".swiper-pagination",
+         clickable: true,
+       },
+     });
+   </script>
+<!-- this is the 2nd swiper -->
+   <script>
+    var swiper = new Swiper(".myNewSwiper", {
+      slidesPerView: 3,
+      centeredSlides: true,
+      spaceBetween: 30,
+      loop:true,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+
+  </script>
+<!-- this is third swiper -->
+<script>
+    var swiper = new Swiper(".myThirdSwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+
 </html>
