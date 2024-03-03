@@ -20,8 +20,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
    
 </head>
-<body class="relative">
-    <header class="w-full sticky top-0 z-[100] bg-white"  >
+<body class="relative overflow-x-hidden">
+    <header class="w-full sticky top-0 z-[100] bg-white overflow-x-hidden"  >
         <div class="w-full flex items-center  justify-around  p-2 h-[80px]  overflow-x-hidden">
 
         
@@ -72,9 +72,9 @@
         
 
     </header>
-    <main class="overflow-y-auto">
+    <main class="overflow-y-auto overflow-x-hidden ">
         <!-- Slider -->
-        <div class="Slider">
+        <div class="Slider overflow-x-hidden">
 
             <div class="oldswiper myOldSwiper">
                 <div class="swiper-wrapper">
@@ -99,7 +99,7 @@
         </div>
 
 <!-- vertical slider with some text -->
-        <div class=" lg:flex  justify-center items-center lg:px-32   gap-2 bg-white relative">
+        <div class=" lg:flex  justify-center items-center lg:px-32   gap-2 bg-white relative overflow-x-hidden">
             <!-- text -->
             <div class="w-full lg:mb-0 mb-6   pl-16 z-50 bg-white" >
                 <h2 class="text-center mb-4 font text-3xl font-bold" style="font-family: Amatic SC;">We SEEK THE ANCIENT, WE SEEK THE TIMELESS<br>WE SEEK THE CLEAN WAY </h2>
@@ -146,22 +146,22 @@
 
       
         <!-- tab controls -->
-        <div class=" flex item-center justify-center mt-4 lg:px-36">
-            <ul class=" w-full flex items-center justify-center   gap-16  font-medium text-center transition-transform ease-in-out duration-500" id="default-styled-tab" data-tabs-toggle="#default-styled-tab-content" data-tabs-active-classes="text-white hover:text-white bg-[#71645c] dark:text-white dark:hover:text-white border-black dark:border-black transition-transform ease-in-out duration-500" data-tabs-inactive-classes="dark:border-black text-gray-500 hover:text-gray-500 dark:text-gray-500 border-black hover:border-black dark:border-gray-700 dark:hover:text-gray-300" role="tablist">
-                <li class=" w-full flex items-center justify-center" role="presentation">
+        <div class=" flex item-center justify-center mt-4 lg:px-36 overflow-x-hidden">
+            <ul class=" w-full lg:flex md:flex  items-center justify-center   lg:gap-16  font-medium text-center transition-transform ease-in-out  duration-500" id="default-styled-tab" data-tabs-toggle="#default-styled-tab-content" data-tabs-active-classes="text-white hover:text-white bg-[#71645c] dark:text-white dark:hover:text-white border-black dark:border-black transition-transform ease-in-out duration-500" data-tabs-inactive-classes="dark:border-black text-gray-500 hover:text-gray-500 dark:text-gray-500 border-black hover:border-black dark:border-gray-700 dark:hover:text-gray-300" role="tablist">
+                <li class=" w-full flex items-center justify-center mb-4" role="presentation">
                     <button class="flex items-center justify-center gap-4 py-4 px-10 border rounded-full" id="profile-styled-tab" data-tabs-target="#styled-profile" type="button" role="tab" aria-controls="profile" aria-selected="false">
                     <img class="h-16" src="./tabs/Image 19.png" alt="orange">
                     <p>Face</p>
 
                     </button>
                 </li>
-                <li class=" w-full flex items-center justify-center" role="presentation">
+                <li class=" w-full flex items-center justify-center mb-4" role="presentation">
                     <button class=" flex items-center justify-center gap-4 py-4 px-10 border rounded-full" id="dashboard-styled-tab" data-tabs-target="#styled-dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">
                         <img class="h-16" src="./tabs/Avocado.png" alt="hair">
                         <p>Hair</p>
                     </button>
                 </li>
-                <li class=" w-full flex items-center justify-center" role="presentation">
+                <li class=" w-full flex items-center justify-center mb-4" role="presentation">
                     <button class=" flex items-center justify-center gap-4 py-4 px-10 border rounded-full"id="settings-styled-tab" data-tabs-target="#styled-settings" type="button" role="tab" aria-controls="settings" aria-selected="false">
                     <img class="h-16" src="./tabs/Image 17.png" alt="orange">
                     <p>Body</p>
@@ -171,7 +171,7 @@
         </div>
 
         <!-- tab -->
-        <div id="default-styled-tab-content ">
+        <div id="default-styled-tab-content overflow-x-hidden ">
 
           <!-- first tab -->
             <div class="hidden p-4  pt-0 rounded-lg bg-white  lg:px-36 " id="styled-profile" role="tabpanel" aria-labelledby="profile-tab">
@@ -341,8 +341,8 @@
         <hr class="w-10/12 mx-auto mt-2"> 
 
         <!-- our best seller -->
-        <div>
-            <div class="text-gray-600 body-font">
+        <div >
+            <div class="text-gray-600 body-font overflow-x-hidden w-full">
                 <div class="lg:px-36 py-1 mx-auto">
                     <div class="px-5 py-1 mx-auto">
                         <div class="flex flex-col text-center w-full">
@@ -454,7 +454,7 @@
     <!-- customer Testimonials -->
         <div>
 
-            <section class="text-gray-600 body-font overflow-hidden mt-2 lg:px-28">
+            <section class="w-full text-gray-600 body-font overflow-hidden mt-2 lg:px-28 overflow-x-hidden">
                 <div class="px-5 py-1 mx-auto">
                   <div class="flex flex-col text-center w-full mt-2">
                     <h1 class="sm:text-4xl text-3xl font-medium  mb-2" style="font-family: Amatic SC;">Customer Testimonials</h1> 
@@ -825,52 +825,83 @@
 
 
         </div>
-          <hr class="w-10/12 mx-auto mt-2">  
+          <hr class="w-10/12 mx-auto mt-2 mb-4">  
     <!-- why timeless -->
 
-    <div>
+    <div class=" w-full overflow-x-hidden">
       <div class="text-gray-600 body-font">
-          <div class="lg:px-36 py-1 mx-auto">
+          <div class="lg:px-36 py-8 mx-auto">
               <div class="px-5 py-1 mx-auto">
                   <div class="flex flex-col text-center w-full">
-                    <h1 class="sm:text-4xl text-3xl font-medium  " style="font-family: Amatic SC; font-weight: 400;">Why Timeless </h1> 
+                    <h1 class="sm:text-4xl text-3xl font-medium mb-4 " style="font-family: Amatic SC; font-weight: 400;">Why Timeless </h1> 
                   </div>
 
             <div class="flex flex-wrap lg:px-10">
+
+              <!-- working sample -->
               <div class="lg:w-1/3 md:w-1/2 p-4 w-full">
-                <div class="block relative h-64 rounded overflow-hidden">
-                  <img alt="ecommerce" class="object-contain object-center w-full h-full" src="./Best Seller Products/Kumkumadi 35ml Paint.png">
+                <div class="rounded overflow-hidden">
+                  <div class="container">
+                    <div class="card h-96 w-full border-2 border-gray-600">
+                        <div class="imgBx">
+                            <h1 class=" text-center text-Black text-2xl font-bold  mb-1">The Forgotten Way</h1> 
+                        </div>
+            
+                        <div class="contentBx px-8 ">
+            
+                            <h2 class="text-black"> Our products are a re-imagination of treasured ancient beauty rituals for skin, hair, body & beauty. Melding ancient wisdom with science, our organic products soaked with essential vitamins, minerals & botanicals, have a rare potency to enhance your beauty
+
+                            </h2>
+            
+                        </div>
+            
+                    </div>
                 </div>
-                <div class=" text-center">
-                  <h3 class="text-gray-500 text-xs   mb-1">Mahodaya Kannauj Rose Organic
-                   Lip Butter - Pink</h3>
-                  <div class="flex items-center justify-center gap-8"><img src="./Best Seller Products/ratings.png" alt="ratings"></div>
-                  <p class="mt-1">₹650.00</p>
+                </div>
+               
+              </div>
+              <div class="lg:w-1/3 md:w-1/2 p-4 w-full">
+                <div class="rounded overflow-hidden">
+                  <div class="container">
+                    <div class="card h-96 w-full border-2 border-gray-600">
+                        <div class="imgBx">
+                            <h1 class=" text-center text-Black text-2xl font-bold  mb-1">The Forgotten Way</h1> 
+                        </div>
+            
+                        <div class="contentBx px-8 ">
+            
+                            <h2 class="text-black"> Our products are a re-imagination of treasured ancient beauty rituals for skin, hair, body & beauty. Melding ancient wisdom with science, our organic products soaked with essential vitamins, minerals & botanicals, have a rare potency to enhance your beauty
+
+                            </h2>
+            
+                        </div>
+            
+                    </div>
+                </div>
                 </div>
               </div>
               <div class="lg:w-1/3 md:w-1/2 p-4 w-full">
-                  <a class="block relative h-64 rounded overflow-hidden">
-                    <img alt="ecommerce" class="object-contain object-center w-full h-full" src="./Best Seller Products/Kushuma 35ml Paint.png">
-                  </a>
-                  <div class=" text-center">
-                      <h3 class="text-gray-500 text-xs   mb-1">Mahodaya Kannauj Rose Organic
-                       Lip Butter - Pink</h3>
-                      <div class="flex items-center justify-center gap-8"><img src="./Best Seller Products/ratings.png" alt="ratings"></div>
-                      <p class="mt-1">₹650.00</p>
-                    </div>
-              </div>
-              <div class="lg:w-1/3 md:w-1/2 p-4 w-full">
-                  <a class="block relative h-64 rounded overflow-hidden">
-                    <img alt="ecommerce" class="object-contain object-center w-full h-full" src="./Best Seller Products/Mahodaya Rose Paint.png">
-                  </a>
-                  <div class=" text-center">
-                      <h3 class="text-gray-500 text-xs   mb-1">Mahodaya Kannauj Rose Organic
-                       Lip Butter - Pink</h3>
-                      <div class="flex items-center justify-center gap-8"><img src="./Best Seller Products/ratings.png" alt="ratings"></div>
-                      <p class="mt-1">₹650.00</p>
-                    </div>
+                  <div class="rounded overflow-hidden">
+                    <div class="container">
+                      <div class="card h-96 w-full border-2 border-gray-600">
+                          <div class="imgBx">
+                              <h1 class=" text-center text-Black text-2xl font-bold  mb-1">The Forgotten Way</h1> 
+                          </div>
+              
+                          <div class="contentBx px-8 ">
+              
+                              <h2 class="text-black"> Our products are a re-imagination of treasured ancient beauty rituals for skin, hair, body & beauty. Melding ancient wisdom with science, our organic products soaked with essential vitamins, minerals & botanicals, have a rare potency to enhance your beauty
+
+                              </h2>
+              
+                          </div>
+              
+                      </div>
+                  </div>
+                  </div>
+                  
                 </div>
-            </div>
+              </div>
 
 
 
@@ -880,18 +911,19 @@
       
     </div>
   </div>
-<!--  
-animation -->
+
+
+<!--  animation -->
     <div>
-      <div>
+      <div class=" w-full overflow-x-hidden">
         <div class="text-gray-600 body-font">
-            <div class="lg:px-36 py-1 mx-auto">
+            <div class="lg:px-36  px-8 py-1 mx-auto">
                 <div class="px-5 py-1 mx-auto">
                    
   
-              <div class="flex items-center gap-4 justify-center flex-col lg:flex-row md:flex-row justify-center lg:px-10">
+              <div class="flex items-center gap-4 justify-center flex-col lg:flex-row  justify-center lg:px-10">
                 <div class=" w-full">
-                  <div class=" flex flex-col ">
+                  <div class=" flex flex-col justify-center items-center ">
                     
                     <div class="w-48 h-24 rounded-tl-full rounded-tr-full bg-white  border-t border-l border-r border-gray-600 flex items-center justify-center">
                       <img class="h-16 w-24 mt-6 animate-bounce" src="./animation/109503.png" alt="">
@@ -903,7 +935,7 @@ animation -->
                   </div>
                 </div>
                 <div class=" w-full">
-                  <div class=" flex flex-col ">
+                  <div class=" flex flex-col justify-center items-center  ">
                     
                     <div class="w-48 h-24 rounded-tl-full rounded-tr-full bg-white  border-t border-l border-r border-gray-600 flex items-center justify-center">
                       <img class="h-16 w-24 mt-6 animate-bounce" src="./animation/109503.png" alt="">
@@ -915,7 +947,7 @@ animation -->
                   </div>
                 </div>
                 <div class=" w-full">
-                  <div class=" flex flex-col ">
+                  <div class=" flex flex-col justify-center items-center  ">
                     
                     <div class="w-48 h-24 rounded-tl-full rounded-tr-full bg-white  border-t border-l border-r border-gray-600 flex items-center justify-center">
                       <img class="h-16 w-24 mt-6 animate-bounce" src="./animation/109503.png" alt="">
@@ -927,7 +959,7 @@ animation -->
                   </div>
                 </div>
                 <div class=" w-full">
-                  <div class=" flex flex-col ">
+                  <div class=" flex flex-col justify-center items-center  ">
                     
                     <div class="w-48 h-24 rounded-tl-full rounded-tr-full bg-white  border-t border-l border-r border-gray-600 flex items-center justify-center">
                       <img class="h-16 w-24 mt-6 animate-bounce" src="./animation/109503.png" alt="">
@@ -956,9 +988,9 @@ animation -->
 
     </main>
     <footer class="bg-[#71645c]  w-full mt-8 ">
-        <div class="container px-16 pb-4 pt-8 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col ">
-          <div class="flex-grow flex flex-wrap  md:text-left text-center ">
-            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <div class="container px-16 pb-4 pt-8 mx-auto flex md:items-center lg:items-start md:flex-row  flex-col ">
+          <div class="flex-grow flex flex-wrap lg:text-left text-center ">
+            <div class="lg:w-1/4 md:w-1/2 w-full px-auto">
               <h2 class=" font-medium text-white  text-sm mb-3">Shop</h2>
               <nav class="list-none mb-10">
                 <li>
@@ -978,7 +1010,7 @@ animation -->
                   </li>
               </nav>
             </div>
-            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <div class="lg:w-1/4 md:w-1/2 w-full px-auto">
               <h2 class="title-font font-medium text-white text-sm mb-3">About</h2>
               <nav class="list-none mb-10">
                 <li>
@@ -1007,7 +1039,7 @@ animation -->
                 </li>
               </nav>
             </div>
-            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <div class="lg:w-1/4 md:w-1/2 w-full px-auto">
                 <h2 class=" font-medium text-white text-sm mb-3">Quick Links</h2>
                 <nav class="list-none mb-10">
                   <li>
@@ -1037,7 +1069,7 @@ animation -->
                 </nav>
              </div>
 
-             <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+             <div class="lg:w-1/4 md:w-1/2 w-full px-auto">
                 <h2 class="font-medium text-white text-sm mb-3">Get In Touch</h2>
                 <nav class="list-none mb-10">
                     <li>
@@ -1068,7 +1100,7 @@ animation -->
 
 
         <div class="bg-white  ">
-          <div class="mx-auto py-4 px-5 flex justify-around items-center ">
+          <div class="mx-auto py-4 px-5 lg:flex justify-center items-center ">
             <div>
                 <p class="text-gray-500 text-sm text-center sm:text-left">TIMELESS BEAUTY SECRET © 
                 </p>
